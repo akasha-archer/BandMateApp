@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BandMate</string>
+    <string name="title_activity_details_tab">DetailsTab</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="form_heading">ORDER FORM</string>
+    <string name="size_guide_heading">SIZE AND MEASUREMENT GUIDE</string>
+    <string name="bronze_name">BRONZE by Keshia Als</string>
+    <string name="reptile_title">REPTILE by Keisha Als</string>
+    <string name="snake_title">SNAKE by Keisha Als</string>
+    <string name="phoenix_title">PHOENIX by Marie Collette</string>
+    <string name="sizzle_title">SIZZLE by Marie Collette</string>
+    <string name="kuu_title">KUU by Nadia Batson</string>
+
+
+    <string name="f_name">Name:</string>
+    <string name="f_email">Email:</string>
+    <string name="f_telephone">Telephone:</string>
+    <string name="f_costume">Costume:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="order_form">ORDER FORM</string>
+
+
+</resources>

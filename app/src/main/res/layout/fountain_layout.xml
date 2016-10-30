@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/foy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FOUNTAIN OF YOUTH by Ryan Chan"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/space_below"
+        android:paddingTop="@dimen/space_below"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fountain_detail"
+        android:layout_below="@id/foy_title"/>
+
+</RelativeLayout>
