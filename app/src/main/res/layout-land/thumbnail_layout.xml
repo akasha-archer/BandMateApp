@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:paddingTop="@dimen/left_indent"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textColor="@color/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="testing  title"
+        android:paddingBottom="@dimen/space_below"
+        android:paddingTop="@dimen/huge_margin"
+        android:paddingLeft="@dimen/left_indent"
+        android:textAllCaps="true"
+        android:layout_toRightOf="@id/ivThumbnail"/>
+
+
+    <TextView
+        android:id="@+id/tvDesigner"
+        android:text="testing designer's name"
+        android:paddingLeft="@dimen/left_indent"
+        android:textColor="@color/description"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivThumbnail"
+        android:layout_below="@id/tvTitle"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
