@@ -1,122 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="@dimen/large_margin">
+    android:padding="@dimen/left_indent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/heading"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/order_form" />
-
-    </LinearLayout>
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/f_name" />
-
-    <EditText
-        android:id="@+id/txtTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.25"
-        android:text="@string/f_email" />
-
-    <EditText
-        android:id="@+id/txtAuthor"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.75"
-        android:ems="10" />
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.25"
-        android:text="@string/f_telephone" />
-
-    <EditText
-        android:id="@+id/txtPublisher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10" />
-</LinearLayout>
-
-<LinearLayout
+<TextView
+    android:id="@+id/order_name"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal" >
+    android:text="@string/f_name"
+    android:textAllCaps="true"
+    android:textStyle="bold"
+    android:paddingBottom="@dimen/space_below" />
+
+<EditText
+    android:background="@color/formFields"
+    android:id="@+id/name_field"
+    android:layout_width="400dp"
+    android:layout_height="32dp"
+    android:layout_below="@id/order_name"/>
+
 
     <TextView
+        android:id="@+id/order_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/f_email"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/large_margin"
+        android:layout_below="@id/name_field"
+        android:paddingBottom="@dimen/space_below"/>
+
+    <EditText
+        android:background="@color/formFields"
+        android:id="@+id/email_field"
+        android:textSize="12dp"
+        android:layout_width="400dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/order_email" />
+
+
+    <TextView
+        android:id="@+id/order_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/f_telephone"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/large_margin"
+        android:layout_below="@id/email_field"
+        android:paddingBottom="@dimen/space_below"/>
+
+    <EditText
+        android:background="@color/formFields"
+        android:id="@+id/tel_field"
+        android:textSize="12dp"
+        android:layout_width="400dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/order_telephone" />
+
+    <TextView
+        android:id="@+id/order_costume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/f_costume"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/large_margin"
+        android:paddingBottom="@dimen/space_below"
+        android:layout_below="@id/tel_field"/>
+
+    <EditText
+        android:background="@color/formFields"
+        android:id="@+id/costume_field"
+        android:textSize="12dp"
+        android:layout_width="400dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/order_costume"
+        android:paddingBottom="@dimen/space_below"
+        />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/f_costume" />
+        android:text="@string/submit"
+        android:padding="@dimen/space_below"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_below="@id/costume_field"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
 
-        <EditText
-            android:id="@+id/txtIsbn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="5" />
-    </LinearLayout>
-
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/btnSubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/submit" />
-
-    </LinearLayout>
-
-</LinearLayout>
-
-</LinearLayout>
+    </RelativeLayout>

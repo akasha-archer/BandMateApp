@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
-        android:text="Sizes here"
+        android:id="@+id/top_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:gravity="center"
+        android:text="TOPS"
+        android:layout_marginTop="@dimen/space_below"
+        android:paddingBottom="@dimen/space_below"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_sizes"
+        android:layout_marginTop="@dimen/space_below"
+        android:src="@drawable/size_tops_women"
+        android:layout_below="@id/top_heading"/>
 
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/bottom_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BOTTOMS"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="@dimen/space_below"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/top_sizes"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_sizes"
+        android:src="@drawable/size_tops_women"
+        android:layout_marginTop="@dimen/space_below"
+        android:layout_below="@id/bottom_heading"/>
+
+
+</RelativeLayout>
